@@ -30,5 +30,14 @@ python manage.py runserver
 ```
 
 ## Tips for Final project
+- for team work:
+  - one member of the team creates project
+  - this member creates git repository and share with other members (settings -> Collaborators -> Add people...)
+  - other members makes git clone
+  - all members must have same settings of indentation in Pycharm
+- in the path of project files should not be spaces nor diacritics
 - all installed modules must be in same version for all team members (file requirements.txt)
+  ```bash
+  pip freeze > requirements.txt
+  ```
 - `settings.py` - move SECRET_KEY to file ignored by git
