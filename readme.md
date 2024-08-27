@@ -29,6 +29,27 @@ Default on port 8000:
 python manage.py runserver
 ```
 
+We can change port number:
+```bash
+python manage.py runserver 8001
+```
+
+## Start new application
+```bash
+python manage.py startapp viewer
+```
+- viewer - our first application
+  - migrations - directory with migrations scripts (changes in database schema)
+  - `__init__.py` - necessary to make this directory as module
+  - `admin.py` - setting of administration panel
+  - `apps.py` - setting of the application - we don't need to change it
+  - `models.py` - IMPORTANT - includes definition of models in database
+  - `tests.py` - includes tests
+  - `views.py` - IMPORTANT - includes views (business logic)
+ 
+## Registration of new application
+In file `./holymovies/settings.py` add application to the list `INSTALLED_APPS`
+
 ## Tips for Final project
 - for team work:
   - one member of the team creates project
