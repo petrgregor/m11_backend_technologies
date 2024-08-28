@@ -22,11 +22,4 @@ from viewer.views import hello, hello2, hello3, add, add2
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('hello/', hello),
-    path('hello2/<str:s>/', hello2),
-    path('hello3', hello3),
-    path('hello3/', hello3),
-
-    path('add/<int:num1>/<int:num2>/', add),
-    path('add2', add2),
 ]
