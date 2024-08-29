@@ -1,0 +1,2024 @@
+[
+  {
+    "model": "viewer.genre",
+    "pk": 1,
+    "fields": {
+      "name": "Drama"
+    }
+  },
+  {
+    "model": "viewer.genre",
+    "pk": 2,
+    "fields": {
+      "name": "Krimi"
+    }
+  },
+  {
+    "model": "viewer.genre",
+    "pk": 3,
+    "fields": {
+      "name": "Komedie"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 241,
+    "fields": {
+      "name": "Aruba",
+      "code": "ABW"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 242,
+    "fields": {
+      "name": "Afghanistan",
+      "code": "AFG"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 243,
+    "fields": {
+      "name": "Angola",
+      "code": "AGO"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 244,
+    "fields": {
+      "name": "Anguilla",
+      "code": "AIA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 245,
+    "fields": {
+      "name": "Albania",
+      "code": "ALB"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 246,
+    "fields": {
+      "name": "Andorra",
+      "code": "AND"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 247,
+    "fields": {
+      "name": "Netherlands Antilles",
+      "code": "ANT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 248,
+    "fields": {
+      "name": "United Arab Emirates",
+      "code": "ARE"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 249,
+    "fields": {
+      "name": "Argentina",
+      "code": "ARG"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 250,
+    "fields": {
+      "name": "Armenia",
+      "code": "ARM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 251,
+    "fields": {
+      "name": "American Samoa",
+      "code": "ASM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 252,
+    "fields": {
+      "name": "Antarctica",
+      "code": "ATA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 253,
+    "fields": {
+      "name": "French Southern territories",
+      "code": "ATF"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 254,
+    "fields": {
+      "name": "Antigua and Barbuda",
+      "code": "ATG"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 255,
+    "fields": {
+      "name": "Australia",
+      "code": "AUS"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 256,
+    "fields": {
+      "name": "Austria",
+      "code": "AUT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 257,
+    "fields": {
+      "name": "Azerbaijan",
+      "code": "AZE"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 258,
+    "fields": {
+      "name": "Burundi",
+      "code": "BDI"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 259,
+    "fields": {
+      "name": "Belgium",
+      "code": "BEL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 260,
+    "fields": {
+      "name": "Benin",
+      "code": "BEN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 261,
+    "fields": {
+      "name": "Burkina Faso",
+      "code": "BFA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 262,
+    "fields": {
+      "name": "Bangladesh",
+      "code": "BGD"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 263,
+    "fields": {
+      "name": "Bulgaria",
+      "code": "BGR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 264,
+    "fields": {
+      "name": "Bahrain",
+      "code": "BHR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 265,
+    "fields": {
+      "name": "Bahamas",
+      "code": "BHS"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 266,
+    "fields": {
+      "name": "Bosnia and Herzegovina",
+      "code": "BIH"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 267,
+    "fields": {
+      "name": "Belarus",
+      "code": "BLR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 268,
+    "fields": {
+      "name": "Belize",
+      "code": "BLZ"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 269,
+    "fields": {
+      "name": "Bermuda",
+      "code": "BMU"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 270,
+    "fields": {
+      "name": "Bolivia",
+      "code": "BOL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 271,
+    "fields": {
+      "name": "Brazil",
+      "code": "BRA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 272,
+    "fields": {
+      "name": "Barbados",
+      "code": "BRB"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 273,
+    "fields": {
+      "name": "Brunei",
+      "code": "BRN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 274,
+    "fields": {
+      "name": "Bhutan",
+      "code": "BTN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 275,
+    "fields": {
+      "name": "Bouvet Island",
+      "code": "BVT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 276,
+    "fields": {
+      "name": "Botswana",
+      "code": "BWA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 277,
+    "fields": {
+      "name": "Central African Republic",
+      "code": "CAF"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 278,
+    "fields": {
+      "name": "Canada",
+      "code": "CAN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 279,
+    "fields": {
+      "name": "Cocos (Keeling) Islands",
+      "code": "CCK"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 280,
+    "fields": {
+      "name": "Côte d’Ivoire",
+      "code": "CIV"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 281,
+    "fields": {
+      "name": "Cameroon",
+      "code": "CMR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 282,
+    "fields": {
+      "name": "Congo, The Democratic Republic of the",
+      "code": "COD"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 283,
+    "fields": {
+      "name": "Congo",
+      "code": "COG"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 284,
+    "fields": {
+      "name": "Cook Islands",
+      "code": "COK"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 285,
+    "fields": {
+      "name": "Colombia",
+      "code": "COL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 286,
+    "fields": {
+      "name": "Comoros",
+      "code": "COM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 287,
+    "fields": {
+      "name": "Cape Verde",
+      "code": "CPV"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 288,
+    "fields": {
+      "name": "Costa Rica",
+      "code": "CRI"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 289,
+    "fields": {
+      "name": "Cuba",
+      "code": "CUB"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 290,
+    "fields": {
+      "name": "Christmas Island",
+      "code": "CXR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 291,
+    "fields": {
+      "name": "Cayman Islands",
+      "code": "CYM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 292,
+    "fields": {
+      "name": "Cyprus",
+      "code": "CYP"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 293,
+    "fields": {
+      "name": "Czech Republic",
+      "code": "CZE"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 294,
+    "fields": {
+      "name": "Germany",
+      "code": "DEU"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 295,
+    "fields": {
+      "name": "Djibouti",
+      "code": "DJI"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 296,
+    "fields": {
+      "name": "Dominica",
+      "code": "DMA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 297,
+    "fields": {
+      "name": "Denmark",
+      "code": "DNK"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 298,
+    "fields": {
+      "name": "Dominican Republic",
+      "code": "DOM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 299,
+    "fields": {
+      "name": "Algeria",
+      "code": "DZA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 300,
+    "fields": {
+      "name": "Ecuador",
+      "code": "ECU"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 301,
+    "fields": {
+      "name": "Egypt",
+      "code": "EGY"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 302,
+    "fields": {
+      "name": "Eritrea",
+      "code": "ERI"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 303,
+    "fields": {
+      "name": "Western Sahara",
+      "code": "ESH"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 304,
+    "fields": {
+      "name": "Spain",
+      "code": "ESP"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 305,
+    "fields": {
+      "name": "Estonia",
+      "code": "EST"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 306,
+    "fields": {
+      "name": "Ethiopia",
+      "code": "ETH"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 307,
+    "fields": {
+      "name": "Finland",
+      "code": "FIN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 308,
+    "fields": {
+      "name": "Fiji Islands",
+      "code": "FJI"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 309,
+    "fields": {
+      "name": "Falkland Islands",
+      "code": "FLK"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 310,
+    "fields": {
+      "name": "France",
+      "code": "FRA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 311,
+    "fields": {
+      "name": "Faroe Islands",
+      "code": "FRO"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 312,
+    "fields": {
+      "name": "Micronesia, Federated States of",
+      "code": "FSM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 313,
+    "fields": {
+      "name": "Gabon",
+      "code": "GAB"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 314,
+    "fields": {
+      "name": "United Kingdom",
+      "code": "GBR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 315,
+    "fields": {
+      "name": "Georgia",
+      "code": "GEO"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 316,
+    "fields": {
+      "name": "Ghana",
+      "code": "GHA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 317,
+    "fields": {
+      "name": "Gibraltar",
+      "code": "GIB"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 318,
+    "fields": {
+      "name": "Guinea",
+      "code": "GIN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 319,
+    "fields": {
+      "name": "Guadeloupe",
+      "code": "GLP"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 320,
+    "fields": {
+      "name": "Gambia",
+      "code": "GMB"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 321,
+    "fields": {
+      "name": "Guinea-Bissau",
+      "code": "GNB"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 322,
+    "fields": {
+      "name": "Equatorial Guinea",
+      "code": "GNQ"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 323,
+    "fields": {
+      "name": "Greece",
+      "code": "GRC"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 324,
+    "fields": {
+      "name": "Grenada",
+      "code": "GRD"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 325,
+    "fields": {
+      "name": "Greenland",
+      "code": "GRL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 326,
+    "fields": {
+      "name": "Guatemala",
+      "code": "GTM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 327,
+    "fields": {
+      "name": "French Guiana",
+      "code": "GUF"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 328,
+    "fields": {
+      "name": "Guam",
+      "code": "GUM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 329,
+    "fields": {
+      "name": "Guyana",
+      "code": "GUY"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 330,
+    "fields": {
+      "name": "Hong Kong",
+      "code": "HKG"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 331,
+    "fields": {
+      "name": "Heard Island and McDonald Islands",
+      "code": "HMD"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 332,
+    "fields": {
+      "name": "Honduras",
+      "code": "HND"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 333,
+    "fields": {
+      "name": "Croatia",
+      "code": "HRV"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 334,
+    "fields": {
+      "name": "Haiti",
+      "code": "HTI"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 335,
+    "fields": {
+      "name": "Hungary",
+      "code": "HUN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 336,
+    "fields": {
+      "name": "Switzerland",
+      "code": "CHE"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 337,
+    "fields": {
+      "name": "Chile",
+      "code": "CHL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 338,
+    "fields": {
+      "name": "China",
+      "code": "CHN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 339,
+    "fields": {
+      "name": "Indonesia",
+      "code": "IDN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 340,
+    "fields": {
+      "name": "India",
+      "code": "IND"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 341,
+    "fields": {
+      "name": "British Indian Ocean Territory",
+      "code": "IOT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 342,
+    "fields": {
+      "name": "Ireland",
+      "code": "IRL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 343,
+    "fields": {
+      "name": "Iran",
+      "code": "IRN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 344,
+    "fields": {
+      "name": "Iraq",
+      "code": "IRQ"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 345,
+    "fields": {
+      "name": "Iceland",
+      "code": "ISL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 346,
+    "fields": {
+      "name": "Israel",
+      "code": "ISR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 347,
+    "fields": {
+      "name": "Italy",
+      "code": "ITA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 348,
+    "fields": {
+      "name": "Jamaica",
+      "code": "JAM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 349,
+    "fields": {
+      "name": "Jordan",
+      "code": "JOR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 350,
+    "fields": {
+      "name": "Japan",
+      "code": "JPN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 351,
+    "fields": {
+      "name": "Kazakstan",
+      "code": "KAZ"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 352,
+    "fields": {
+      "name": "Kenya",
+      "code": "KEN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 353,
+    "fields": {
+      "name": "Kyrgyzstan",
+      "code": "KGZ"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 354,
+    "fields": {
+      "name": "Cambodia",
+      "code": "KHM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 355,
+    "fields": {
+      "name": "Kiribati",
+      "code": "KIR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 356,
+    "fields": {
+      "name": "Saint Kitts and Nevis",
+      "code": "KNA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 357,
+    "fields": {
+      "name": "South Korea",
+      "code": "KOR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 358,
+    "fields": {
+      "name": "Kuwait",
+      "code": "KWT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 359,
+    "fields": {
+      "name": "Laos",
+      "code": "LAO"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 360,
+    "fields": {
+      "name": "Lebanon",
+      "code": "LBN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 361,
+    "fields": {
+      "name": "Liberia",
+      "code": "LBR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 362,
+    "fields": {
+      "name": "Libyan Arab Jamahiriya",
+      "code": "LBY"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 363,
+    "fields": {
+      "name": "Saint Lucia",
+      "code": "LCA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 364,
+    "fields": {
+      "name": "Liechtenstein",
+      "code": "LIE"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 365,
+    "fields": {
+      "name": "Sri Lanka",
+      "code": "LKA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 366,
+    "fields": {
+      "name": "Lesotho",
+      "code": "LSO"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 367,
+    "fields": {
+      "name": "Lithuania",
+      "code": "LTU"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 368,
+    "fields": {
+      "name": "Luxembourg",
+      "code": "LUX"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 369,
+    "fields": {
+      "name": "Latvia",
+      "code": "LVA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 370,
+    "fields": {
+      "name": "Macao",
+      "code": "MAC"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 371,
+    "fields": {
+      "name": "Morocco",
+      "code": "MAR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 372,
+    "fields": {
+      "name": "Monaco",
+      "code": "MCO"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 373,
+    "fields": {
+      "name": "Moldova",
+      "code": "MDA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 374,
+    "fields": {
+      "name": "Madagascar",
+      "code": "MDG"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 375,
+    "fields": {
+      "name": "Maldives",
+      "code": "MDV"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 376,
+    "fields": {
+      "name": "Mexico",
+      "code": "MEX"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 377,
+    "fields": {
+      "name": "Marshall Islands",
+      "code": "MHL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 378,
+    "fields": {
+      "name": "Macedonia",
+      "code": "MKD"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 379,
+    "fields": {
+      "name": "Mali",
+      "code": "MLI"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 380,
+    "fields": {
+      "name": "Malta",
+      "code": "MLT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 381,
+    "fields": {
+      "name": "Myanmar",
+      "code": "MMR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 382,
+    "fields": {
+      "name": "Mongolia",
+      "code": "MNG"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 383,
+    "fields": {
+      "name": "Northern Mariana Islands",
+      "code": "MNP"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 384,
+    "fields": {
+      "name": "Mozambique",
+      "code": "MOZ"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 385,
+    "fields": {
+      "name": "Mauritania",
+      "code": "MRT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 386,
+    "fields": {
+      "name": "Montserrat",
+      "code": "MSR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 387,
+    "fields": {
+      "name": "Martinique",
+      "code": "MTQ"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 388,
+    "fields": {
+      "name": "Mauritius",
+      "code": "MUS"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 389,
+    "fields": {
+      "name": "Malawi",
+      "code": "MWI"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 390,
+    "fields": {
+      "name": "Malaysia",
+      "code": "MYS"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 391,
+    "fields": {
+      "name": "Mayotte",
+      "code": "MYT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 392,
+    "fields": {
+      "name": "Namibia",
+      "code": "NAM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 393,
+    "fields": {
+      "name": "New Caledonia",
+      "code": "NCL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 394,
+    "fields": {
+      "name": "Niger",
+      "code": "NER"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 395,
+    "fields": {
+      "name": "Norfolk Island",
+      "code": "NFK"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 396,
+    "fields": {
+      "name": "Nigeria",
+      "code": "NGA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 397,
+    "fields": {
+      "name": "Nicaragua",
+      "code": "NIC"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 398,
+    "fields": {
+      "name": "Niue",
+      "code": "NIU"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 399,
+    "fields": {
+      "name": "Netherlands",
+      "code": "NLD"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 400,
+    "fields": {
+      "name": "Norway",
+      "code": "NOR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 401,
+    "fields": {
+      "name": "Nepal",
+      "code": "NPL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 402,
+    "fields": {
+      "name": "Nauru",
+      "code": "NRU"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 403,
+    "fields": {
+      "name": "New Zealand",
+      "code": "NZL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 404,
+    "fields": {
+      "name": "Oman",
+      "code": "OMN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 405,
+    "fields": {
+      "name": "Pakistan",
+      "code": "PAK"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 406,
+    "fields": {
+      "name": "Panama",
+      "code": "PAN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 407,
+    "fields": {
+      "name": "Pitcairn",
+      "code": "PCN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 408,
+    "fields": {
+      "name": "Peru",
+      "code": "PER"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 409,
+    "fields": {
+      "name": "Philippines",
+      "code": "PHL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 410,
+    "fields": {
+      "name": "Palau",
+      "code": "PLW"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 411,
+    "fields": {
+      "name": "Papua New Guinea",
+      "code": "PNG"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 412,
+    "fields": {
+      "name": "Poland",
+      "code": "POL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 413,
+    "fields": {
+      "name": "Puerto Rico",
+      "code": "PRI"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 414,
+    "fields": {
+      "name": "North Korea",
+      "code": "PRK"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 415,
+    "fields": {
+      "name": "Portugal",
+      "code": "PRT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 416,
+    "fields": {
+      "name": "Paraguay",
+      "code": "PRY"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 417,
+    "fields": {
+      "name": "Palestine",
+      "code": "PSE"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 418,
+    "fields": {
+      "name": "French Polynesia",
+      "code": "PYF"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 419,
+    "fields": {
+      "name": "Qatar",
+      "code": "QAT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 420,
+    "fields": {
+      "name": "Réunion",
+      "code": "REU"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 421,
+    "fields": {
+      "name": "Romania",
+      "code": "ROM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 422,
+    "fields": {
+      "name": "Russian Federation",
+      "code": "RUS"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 423,
+    "fields": {
+      "name": "Rwanda",
+      "code": "RWA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 424,
+    "fields": {
+      "name": "Saudi Arabia",
+      "code": "SAU"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 425,
+    "fields": {
+      "name": "Sudan",
+      "code": "SDN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 426,
+    "fields": {
+      "name": "Senegal",
+      "code": "SEN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 427,
+    "fields": {
+      "name": "Singapore",
+      "code": "SGP"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 428,
+    "fields": {
+      "name": "South Georgia and the South Sandwich Islands",
+      "code": "SGS"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 429,
+    "fields": {
+      "name": "Saint Helena",
+      "code": "SHN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 430,
+    "fields": {
+      "name": "Svalbard and Jan Mayen",
+      "code": "SJM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 431,
+    "fields": {
+      "name": "Solomon Islands",
+      "code": "SLB"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 432,
+    "fields": {
+      "name": "Sierra Leone",
+      "code": "SLE"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 433,
+    "fields": {
+      "name": "El Salvador",
+      "code": "SLV"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 434,
+    "fields": {
+      "name": "San Marino",
+      "code": "SMR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 435,
+    "fields": {
+      "name": "Somalia",
+      "code": "SOM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 436,
+    "fields": {
+      "name": "Saint Pierre and Miquelon",
+      "code": "SPM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 437,
+    "fields": {
+      "name": "Sao Tome and Principe",
+      "code": "STP"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 438,
+    "fields": {
+      "name": "Suriname",
+      "code": "SUR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 439,
+    "fields": {
+      "name": "Slovakia",
+      "code": "SVK"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 440,
+    "fields": {
+      "name": "Slovenia",
+      "code": "SVN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 441,
+    "fields": {
+      "name": "Sweden",
+      "code": "SWE"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 442,
+    "fields": {
+      "name": "Swaziland",
+      "code": "SWZ"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 443,
+    "fields": {
+      "name": "Seychelles",
+      "code": "SYC"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 444,
+    "fields": {
+      "name": "Syria",
+      "code": "SYR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 445,
+    "fields": {
+      "name": "Turks and Caicos Islands",
+      "code": "TCA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 446,
+    "fields": {
+      "name": "Chad",
+      "code": "TCD"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 447,
+    "fields": {
+      "name": "Togo",
+      "code": "TGO"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 448,
+    "fields": {
+      "name": "Thailand",
+      "code": "THA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 449,
+    "fields": {
+      "name": "Tajikistan",
+      "code": "TJK"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 450,
+    "fields": {
+      "name": "Tokelau",
+      "code": "TKL"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 451,
+    "fields": {
+      "name": "Turkmenistan",
+      "code": "TKM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 452,
+    "fields": {
+      "name": "East Timor",
+      "code": "TMP"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 453,
+    "fields": {
+      "name": "Tonga",
+      "code": "TON"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 454,
+    "fields": {
+      "name": "Trinidad and Tobago",
+      "code": "TTO"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 455,
+    "fields": {
+      "name": "Tunisia",
+      "code": "TUN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 456,
+    "fields": {
+      "name": "Turkey",
+      "code": "TUR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 457,
+    "fields": {
+      "name": "Tuvalu",
+      "code": "TUV"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 458,
+    "fields": {
+      "name": "Taiwan",
+      "code": "TWN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 459,
+    "fields": {
+      "name": "Tanzania",
+      "code": "TZA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 460,
+    "fields": {
+      "name": "Uganda",
+      "code": "UGA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 461,
+    "fields": {
+      "name": "Ukraine",
+      "code": "UKR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 462,
+    "fields": {
+      "name": "United States Minor Outlying Islands",
+      "code": "UMI"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 463,
+    "fields": {
+      "name": "Uruguay",
+      "code": "URY"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 464,
+    "fields": {
+      "name": "United States",
+      "code": "USA"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 465,
+    "fields": {
+      "name": "Uzbekistan",
+      "code": "UZB"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 466,
+    "fields": {
+      "name": "Holy See (Vatican cities State)",
+      "code": "VAT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 467,
+    "fields": {
+      "name": "Saint Vincent and the Grenadines",
+      "code": "VCT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 468,
+    "fields": {
+      "name": "Venezuela",
+      "code": "VEN"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 469,
+    "fields": {
+      "name": "Virgin Islands, British",
+      "code": "VGB"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 470,
+    "fields": {
+      "name": "Virgin Islands, U.S.",
+      "code": "VIR"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 471,
+    "fields": {
+      "name": "Vietnam",
+      "code": "VNM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 472,
+    "fields": {
+      "name": "Vanuatu",
+      "code": "VUT"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 473,
+    "fields": {
+      "name": "Wallis and Futuna",
+      "code": "WLF"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 474,
+    "fields": {
+      "name": "Samoa",
+      "code": "WSM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 475,
+    "fields": {
+      "name": "Yemen",
+      "code": "YEM"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 476,
+    "fields": {
+      "name": "Yugoslavia",
+      "code": "YUG"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 477,
+    "fields": {
+      "name": "South Africa",
+      "code": "ZAF"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 478,
+    "fields": {
+      "name": "Zambia",
+      "code": "ZMB"
+    }
+  },
+  {
+    "model": "viewer.country",
+    "pk": 479,
+    "fields": {
+      "name": "Zimbabwe",
+      "code": "ZWE"
+    }
+  },
+  {
+    "model": "viewer.creator",
+    "pk": 1,
+    "fields": {
+      "name": "Tim",
+      "surname": "Robbins",
+      "date_of_birth": "1958-10-16",
+      "date_of_death": null,
+      "country_of_birth": 464,
+      "country_of_death": null,
+      "biography": "Timothy Francis Robbins sa síce narodil v slnečnej Kalifornii, ale iba málokedy hráva vo vyložených komédiách. Pristanú mu záporné úlohy alebo smutné kladné, ktoré sa niečím v živote previnili, ale zvyknú si to dramatizovať oveľa viac, ako je možno potrebné. Veď kto by zabudol na mladučkého bankového úradníka Andyho Dufresnea z adaptácie novely Stephena Kinga VYKÚPENIE Z VÄZNICE SHAWSHANK? „Nestlačil som spúšť, ale svojim spôsobom som ju naozaj zabil. Odohnal som ju.“ Práve sympatický Andy, ktorý sa správa, ako keby vo väzení nebol doživotne, ale iba na návšteve, tomuto vysokánskemu hercovi (1.96 metra) pravdepodobne prepožičal závoj nesmrteľnosti. Zveličene by sa dalo povedať, že Robbins môže nakrúcať akékoľvek hlúposti a tolerantnosť divákov, milujúcich Darabontov film, bude viac-menej nekonečná. Od toho roku (1994) nenakrútil nič, čo by až natoľko divákov utkvelo v spomienkach - a predsa sa stal živou ikonou. Postavy, ktoré si uchovávajú nádej, nech sa okolo nich deje čokoľvek, si nesmrteľnosť nielenže zaslúžia, ale sú k nej tak nejako automaticky „odsúdené“. Dodajme že Shawshank bol nominovaný na sedem Oscarov, ale napokon nezískal ani jedného, pričom Robbins nebol ani nominovaný.\r\n\r\nRobbins však nie je iba Andy, takže sa na toto originálneho herca pozrime bližšie. Má brata Davida a sestru Adele. Talent zdedil po otcovi Gillovi, tiež hercovi a zároveň aj spevákovi. Už počas strednej školy začal mladý Tim hrať v divadlách (prípadne ich osvetľovať). Patrí k tým, ktorí uprednostňujú dotyk praxe pred škrobenosťou škôl, keďže predčasne ukončil štúdium na New York University a radšej išiel robiť umenie priamo na ulicu. Napokon sa ale k štúdium vrátil. Študoval nie len drámu na University of California, ale dokonca pre štúdium herectva odišiel až do Francúzska! Vyvrcholilo to na začiatku 80. rokov, kedy dokonca založil divadelnú skupinu s názvom The Actor´s Gang, v ktorej nie len hral, ale skúšal sám seba (úspešne) pasovať aj do pozície režiséra a scenáristu (častá spolupráca s Adamom Simonom). S týmto súborom Robbins cestoval dokonca až do Škótska. Dodajme, že je aj hudobník a filmový producent (vlastní Havoc Inc.).\r\n\r\nCez vedľajšie postavy v populárnych seriáloch („Moonlighting“ s Cybill Shepherdovou & Bruceom Willisom) sa prebojoval do celovečerných filmov. To už sa blížila takmer polovica 80. rokov, ale Robbins sa nikam neponáhľal a skúšal všeličo. Hral podpornú rolu v hite Tonyho Scotta a Toma Cruisea TOP GUN, v neslávnom fantazijnom prepadáku Willarda Huycka KÁČER HOWARD, prípadne u „športového režiséra“ Rona Sheltona v basketbalovom BULL DURHAM s Kevinom Costnerom a Susan Sarandonovou. Skutočný úspech však dosiahol až drámou Adriana Lynea JAKUBOV REBRÍK, kde stelesnil vietnamského veterána. Po spolupráci so Spikeom Leeom (HORÚČKA DŽUNGLE) ho Robert Altman obsadil do titulnej úlohy slávneho HRÁČA, za čo herec obdržal na festivale v Cannes cenu. S Altamnom sa ešte stretol na jeho kúskoch KRÁTKE STRIHY (a.k.a. Short Cuts) a PRET-A-PORTER. Po pobyte v Shawshanku mu prišiel vhod jeho uvoľnenejší režijný debut BOB ROBERTS, ku ktorému si napísal nie len scenár, ale je so spomenutým bratom Davidom je aj autorom pesničiek.\r\n\r\nĎalší vynikajúci výkon z pozície režiséra podal drámou MŔTVY MUŽ PRICHÁDZA podľa knihy Helen Prejeanovej. Odolal pokušeniu a namiesto seba obsadil do úlohy po zelenej míli idúceho vraha rebelanta Seana Penna a do úlohy sestry svoju vlastnú manželku (od roku 1988) Susan Sarandonovú. Za tento výkon si odniesol nie len nomináciu na Oscara v kategórii najlepšia réžia, ale aj nomináciu na Zlatý glóbus za scenár, ktorý napísal (navyše film kryl aj ako producent).\r\n\r\nAby si oddýchol, prijal v roku 1997 odpočinkovú rolu neverou totálne zničeného reklamného agenta v komédii NIET ČO STRATIŤ, kde vytvoril nesúrodý (už len pre tú výšku) pár s Martinom Lawrenceom. Vďačnú príležitosť dostal aj v zimomriavky vzbudzujúcej úlohe potencionálneho teroristu, žijúceho so svojou manželkou (Joan Cusacková) nenápadne na pokojnom americkom predmestí. Ďalším odpočinkom, ktorý ale po finančnej stránke vyhorel, bolo ambiciózne sci-fi Briana De Palmu MISIA NA MARS. Tu po boku iných hercov (Connie Nielsenová, Gary Sinise) stelesnil kapitána astronautického výsadku, majúceho za úlohu zistiť, či je na Marse život. Jeho následný režisérsky (a scenáristický a produkčný) počin THE CRADLE WILL ROCK nevyšiel. Mihol sa ako prezident v brutálnej komédii Mikea Myersa AUSTIN POWERS 2: ŠPIÓN, KTORÝ MA PRETIAHOL. Zahral si v sviežej romantike Stephena Frearsa SEX, DIEVČATÁ, ČOKOĽVEK (a.k.a. Všetky moje lásky), kde hrali hlavné úlohy Iben Hjejleová / John Cusack. Rok 2001 sa niesol v znamení spolupráce so šialeným scenáristom Charliem Kaufmanom na bláznivej komédii ZLEZ ZO STROMU, kde si zahral vedca, výnimočného tým, že sa snaží naučiť myši ľudskému stolovaniu, ktorého život ale naruší stretnutie s istým Puffom (Rhys Ifans).\r\n\r\nVeľmi úspešný bol rok 2004, kedy v réžii herca Clinta Eastwooda stelesnil po boku Kevina Bacona, Seana Penna a Laurencea Fishburnea lákavú, náročnú a vďačnú kreáciu muža, ktorý sa v detstve stal obeťou pedofilného únosu a na staré kolená sa stáva hlavným podozrivým zo spáchania ohavnej vraždy dospievajúceho dievčaťa (Emmy Rossumová). Za výkon v tejto cenenej adaptácii románu spisovateľa Dennisa Lehanea si odniesol Oscara nie len Penn, ale už aj Robbins (a film získal ďalšie štyri nominácie). V roku 2005, teda takmer dvadsať rokov od TOP GUN, sa stretol s Tomom Cruiseom vo vedľajšej ale neprehliadnuteľnej úlohe úspešného sci-fi thrilleru Stevena Spielberga VOJNA SVETOV. Strihol si tu roličku Harlana Ogilvyho, potencionálneho blázna, ukrývajúceho sa pred agresívnymi mimozemšťanmi v pivnici, kde na čas prichýli Cruisea a jeho dcérku (Dakota Fanningová), s ktorou má nekalé úmysly. K filmu narozprával komentár Morgan Freeman, herec, ktorý s ním absolvoval dlhý a vyčerpávajúci pobyt v Shawshanku.\r\n\r\nDodajme, že so Sarandonovu zatiaľ majú dve deti a že bol nejaký čas horúcim kandidátom na rolu gaunera Dr. Dooma v komixovej adaptácii Fantastickej štvorky. Z jeho ďalších úloh, starších aj novších, každopádne výrazných, spomeňme variáciu na Billa Gatesa v jednom z najrealistickejších „počítačových thrillerov“ ELITA, film ERIK THE VIKING v réžii montypythona Terryho Jonesa, ZÁSKOK bratov Coenovcov a po boku Paula Newmana, romantiku IQ s Meg Ryanovou a Walterom Mattheuaom",
+      "created": "2024-08-29T10:41:58.707Z",
+      "updated": "2024-08-29T10:41:58.707Z"
+    }
+  },
+  {
+    "model": "viewer.creator",
+    "pk": 2,
+    "fields": {
+      "name": "Morgan",
+      "surname": "Freeman",
+      "date_of_birth": "1937-06-01",
+      "date_of_death": null,
+      "country_of_birth": 464,
+      "country_of_death": null,
+      "biography": "Uznávaná hollywoodská veličina je odedávna přitahována širým obzorem, létacími stroji a vesmírem. Doma si suší Oscara a touží po roli v bláznivé komedii.\r\n\r\nVysoký, postarší, černý herec s klidným výrazem a vyzrálým hlasem rozhodně nepatří k těm, kteří by zásobovali média svými výstřednostmi a aférami jakéhokoli druhu. Vyhledávaným hercem se stal až po čtyřicítce, skutečné slávy dosáhl po padesátce, takže téměř půlstoletí jeho života zůstává skryto. Vyjadřuje se jedině k filmovým problémům a dnes už si nikdo ani nedovoluje pokládat mu jiné otázky.\r\n\r\nNarodil se v těžkých životních podmínkách v Mephisu, krátce před tím než propukla druhá světová válka. V mládí se potýkal s alkoholem, na němž skončilo jeho první manželství, ačkoli se poprvé oženil až ve třiceti. Podruhé mu už bylo skoro padesát a toto manželství trvá dodnes. Má dva syny, dvě dcery, desítku vnoučat a přebírá ceny za celoživotní přínosy do filmového světa.\r\n\r\nOd dětství miloval film i oblaka, toužil po tom stát se pilotem a jako mechanik strávil několik let (1955 – 1959) u amerického letectva. Nakonec se své dobrodružné sny rozhodl realizovat skrze film. Po příchodu do Los Angeles v roce 1959 pracoval jako pomocný kancelářský úředník a studoval herectví na Los Angeles Community College, později v Pasadena Playhouse. Hned po tom ještě absolvoval u tanečního instruktora Matta Mattoxe v New Yorku. V polovině šedesátých let odstartovala jeho jevištní kariéra. Debutoval v černošské verzi muzikálu Hello, Dolly (1968) na Broadwayi. Svůj talent naplno rozvíjel od muzikálu přes shakespearovská díla až po moderní dramata, což okomentoval „nelituji toho, protože na jevišti jsem načerpal spoustu zkušeností, které se mi velice hodily v práci před kamerou.“ Živil se jako profesionální tanečník, člen kočovné divadelní společností a téměř nepatrnými rolemi ve filmech.\r\n\r\nZačal pracovat v televizi, v roce 1971 se objevil v dětské dobrodružné podívané Kdo říká, že neumím jezdit na duze? a především nastoupil do pravidelného účinkování v dětské show The Electric Company, například po boku černošského komika Billa Cosbyho. V pořadu pro děti, které mají potíže se čtením vystupoval sedm let v roli Easy Readera, hraběte Draculy a mnoha dalších postav. Dostal se tak do diváckého povědomí, natočil pár televizních snímků, ale ještě dlouho čekal na pořádnou filmovou příležitost, která přišla v roce 1980 ve vězeňském dramatu Brubaker s Robertem Redfordem a v Očitém svědkovi se Sigourney Weaver, kde si zahrál prvního z dlouhé řady policistů a detektivů. Ty v osmdesátých letech pravidelně střídal se zápornými postavami až mu jedna z nich – postava nebezpečného newyorského pasáka vynesla nominaci na Oscara (Chytrák, 1987).\r\n\r\nJedna ruka s úspěchem\r\n\r\n„Myslím si, že úspěch vznikl v pravou chvíli – tehdy, když měl přijít. Kdyby se to stalo dřív, možná bych nedozrál k rolím, které pro mne hodně znamenají. A také by mne možná zničil.“ Rok 1989 mu přinesl několik podstatných rolí. Vystřihnul si arogantního ředitele střední školy v dramatu Lean on Me, v historickém dramatu z občanské války (Glory) si s Denzelem Washingtonem a Matthewem Broderickem zahráli důstojníky a Freeman na něj dodnes rád vzpomíná „Nevím, který z mých filmů je můj nejoblíbenější, ale myslím, že nejdůležitější byl Glory.“ Druhou oscarovou nominaci a vstup do nejširšího diváckého povědomí znamenala nostalgicky pojatá komedie Řidič slečny Daisy o vztahu věrného černošského šoféra a jeho zaměstnankyně, staré židovské vdovy z Atlanty, která v něm nakonec nalezne nejbližšího přítele.\r\n\r\nDobrých nabídek od té doby přibývalo a stále přibývá. Zahrál si v dobrodružném kousku s Kevinem Costnerem Král zbojníků Robin Hood, to mu bylo už 54 let a stával se nestárnoucím hercem devadesátých let. Rok na to Freeman trávil čas v Africe, když přišla nečekaná nabídka od jeho přítele Clinta Eeastwooda na roli ve westernu Nesmiřitelní. Vedle toho se zařadil mezi režírující herce a debutoval dramatem Bopha!, odehrávajícím se v Jihoafrické republice během apartheidu a líčícím osudy černého policisty (Danny Glover) a jeho rodiny. Příliš úspěšné však nebylo a Morgan Freeman se už od té doby drží výhradně druhé strany kamery. Do poloviny tohoto desetiletí získal už třetí oscarovou nominaci, tentokrát za odsouzeného vraha, který se proměňuje z životního cynika v muže nacházejícího ztracenou víru v lidství (Vykoupení z věznice Shawshank). Následoval jeden z jeho nejslavnějších detektivů - Somerset z thrilleru Sedm a důstojník ze Smrtící epidemie v tomtéž roce. Ve slušnou známost vešel i kriminalista Dr. Alex Cross, kterého si zahrál dokonce dvakrát. Poprvé jsme se sním setkali ve Sběrateli polibků (1997) a podruhé v Jako pavouk (2001). Nestal se armádním pilotem, jak si přál, ale svět filmu mu nabídl role vysokých důstojníků (Pavučina snů, Smrtící epidemie).\r\n\r\nPoklidné stárnutí mezi oblaky, filmy a sny\r\n\r\nHraje množství rolí, které nejsou napsány výhradně pro Afroameričana a od poloviny devadesátých let je většinou obsazován do úloh stárnoucích distingovaných gentlemanů. Když tvůrci Drtivého dopadu hledali ideálního představitele pro prvního černého prezidenta Spojených států, nemohl jím být lépe nikdo jiný, než Morgan Freeman. V komedii Božský Bruce dodal tvář samotnému Bohu. V Sestřičce Betty ztělesnil pro změnu nájemného vraha, který do tajů řemesla zaučuje svého synka. Rozhodně se nezastavuje ani v osmašedesáti letech a do filmografie si dopisuje tituly jako Batman začíná. Nato se objevil u Luka Bessona v sentimentálním thrilleru s Jetem Li Utržený z řetězu a na příští rok má rozdělané čtyři projekty. Jeho loď, na níž mu nezbývalo nikdy moc času, bude asi kotvit ještě nějaký čas opuštěná v Karibiku. Zdá se, že pro Freemana má před zábavou stále přednost například jeho produkční společnost Revelation Entertainment a bluesový klub Ground Zero, který otevřel před pár lety v mississippském Clarksdale.\r\n\r\nŽije v Charlestonu v Mississippi a řeší potíže se svou žádostí o registraci jména Morgan Freeman jako obchodní značky. Loni byl dokonce zatčen a dostal zákaz létání, když si se svým letadlem bez povolení věže klidně přistál na letišti v New Jersey. Bez pochyb se zařadil mezi uznávané hollywoodské osobnosti, ale pravý hollywodský Oscar mu stále scházel. Nepřibližoval se mu ani svým vysněným a stále odkládaným dramatem o Nelsonu Mandelovi Long Walk to Freedom. Až letos svou čtvrtou nominaci proměnil ve zlatou sošku a to díky dalšímu filmu u Clinta Eastwooda, Million Dollar Baby, kde ztvárnil trenéra mladé boxerky.\r\n\r\nSplnil si sny o létání i filmování, ještě ale plánuje výlet do vesmíru. Nedávno podepsal dohodu, že se zúčastní první vesmírné, turistické cesty se společností, která již buduje flotilu vesmírných plavidel pro komerční účely. Hodlá zaplatit pouhého čtvrt milionu dolarů za to, že bude jedním z osmi pasažérů rakety, jenž odstartuje v roce 2008. Snad se mu někde mezi planetami nezalíbí natolik, aby se rozhodl začít hrát u mimozemské konkurence.",
+      "created": "2024-08-29T10:42:51.793Z",
+      "updated": "2024-08-29T10:42:51.793Z"
+    }
+  },
+  {
+    "model": "viewer.creator",
+    "pk": 3,
+    "fields": {
+      "name": "Bob",
+      "surname": "Gunton",
+      "date_of_birth": "1945-11-15",
+      "date_of_death": null,
+      "country_of_birth": 464,
+      "country_of_death": null,
+      "biography": "Narodil se jako Robert Patrick Gunton Jr. V letech 1969-1971 se dostal do americké armády a bojoval ve Vietnamu, kde dostal bronzovou medaili za udatnost. Dvakrát dostal nominaci na cenu Tony za role v muzikálech \"Evita\" (1980), kde hrál Juana Dominga Peróna a \"Sweeney Todd\", kde hrál titulní roli. Vyhrál cenu Drama Desk za roli v muzikálu \"Evita\" a cenu Obie za roli v \"How I Got A Story\". Zahrál si ve filmech Glory, Narozen 4. července, JFK, Vykoupení z vězniče Shawshank a mnoha dalších.",
+      "created": "2024-08-29T10:43:40.457Z",
+      "updated": "2024-08-29T10:43:40.457Z"
+    }
+  },
+  {
+    "model": "viewer.creator",
+    "pk": 4,
+    "fields": {
+      "name": "Frank",
+      "surname": "Darabont",
+      "date_of_birth": "1959-01-28",
+      "date_of_death": null,
+      "country_of_birth": 310,
+      "country_of_death": null,
+      "biography": "Rodený Francúz, režisér-scenárista-producent-šéf výroby Frank Darabont, je povestný tým, že kamarátom (alebo za dobrý plat) rád vypomáha s neoficiálnymi prácami na scenároch. Prsty má v Mannovom COLLATERAL, ale záchranné práce robil aj na Branaghovom FRANKENSTEINOVI, MASKE s Jimom Carreym a Spielbergovom VOJAKOVI RYANOVI. Ako scenárista je podpísaný pod NOČNOU MOROU 3 Chucka Russella, ktorému napísal aj sci-fi horor THE BLOB (1988). Písal MUCHU 2, televízne PRÍBEHY Z HROBKY, televíznu show DOBRODRUŽSTVÁ MLADÉHO INDIANA JONESA. Ale nie vždy to ide, napokon ako scenárista zlyhal na prácach na Indiana Jones 4 a Mission: Impossible 3.\r\n\r\nAko režisér debutoval (horor podľa Kinovej poviedky THE WOMAN IN THE ROOM je krátkometražný a BURIED ALIVE točený pre TV) nehororovou novelou Stephena Kinga THE SHAWSHANK REDEMPTION, ktorú si aj zadaptoval. S pestrou galériou výrazných hereckých prejavov natočil film, ktorý nemajú na poprednom mieste Top 10 len užívatelia ČSFD. Bol nominovaný na X Oscarov, ale v konkurencii Forresta Gumpa nemal šancu. Až po uvedení na VHS a do TV sa stal príbeh večnej nádeji, vyhľadávaným a zbožňovaným.\r\n\r\nZa druhý režijný počin si vybral nehororovú novelu Stephena Kinga ZELENÁ MÍĽA, na čo slávny spisovateľ s úsmevom reagoval, že Darabont má najužšiu žánrovú špecializáciu na svete - \"Točí filmy podľa kníh Stephena Kinga, odohrávajúcich sa v base\". Film mal vyšší rozpočet a slávnejšie herecké obsadenie (Tom Hanks), objavil takmer oscarového Michaela Clarka Duncana a aj on sa spoľahlivo stal miláčikom davov, bol strhujúci aj dojemný a získal 4 oscarové nominácie. Nasledovala caprovská smutná komédia MAJESTIC, kde po Weirovi a Formanovi mal dostatok odvahy ukázať, že Jim Carrey je vynikajúci dramatický herec. Film nezaznamenal výrazný úspech a u nás putoval do požičovní.\r\n\r\nPodobne, ako napr. režírujúci scenárista David Koepp, ani Darabont nie je \"normálnym\" hercom; objavuje sa vo vďačných cameo roličkách, ako vtip pre pozorného diváka; zahliadnuť ste ho mohli v televíznej mini sérii Stephena Kinga THE SHINING (King nikdy nebol spokojný s Kubrickovou verziou a tak si v 1997 s Mickom Garrisom natočil vlastný film) alebo v Carpenterových UPÍROCH. Zaujímavejší je pohľad na jeho produkciu. Okrem Míle a Majesticu produkoval aj \"cudzie\" filmy - spomínaný Collateral, SALTON SEA o pomste Vala Kilmera alebo TV mini sériu VEC.",
+      "created": "2024-08-29T10:44:21.547Z",
+      "updated": "2024-08-29T10:44:21.547Z"
+    }
+  },
+  {
+    "model": "viewer.movie",
+    "pk": 1,
+    "fields": {
+      "title_orig": "The Shawshank Redemption",
+      "title_cz": "Vykoupení z věznice Shawshank",
+      "length": 142,
+      "released": 1994,
+      "description": "Mladý bankéř Andy Dufresne (Tim Robbins) je v roce 1947 odsouzen za vraždu své ženy a jejího milence. Přesto, že tento čin popírá, čeká na něj dvojnásobný doživotní trest v obávané věznici Shawshank. Andy se snaží přizpůsobit vězeňskému životu a po krušných začátcích se sblíží s Redem (Morgan Freeman), jenž si tu odpykává svůj doživotní trest už dvacet let. Sílu, jak přežít zdejší peklo, Andy nachází v tajném snu a skryté naději na svobodu...",
+      "rating": null,
+      "created": "2024-08-29T10:45:42.386Z",
+      "updated": "2024-08-29T10:45:42.386Z",
+      "genres": [
+        1,
+        2
+      ],
+      "countries": [
+        464
+      ],
+      "actors": [
+        2,
+        3,
+        1
+      ],
+      "directors": [
+        4
+      ]
+    }
+  }
+]
