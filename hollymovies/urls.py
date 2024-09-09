@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from viewer.views import hello, hello2, hello3, add, add2
+from viewer.views import hello, hello2, hello3, add, add2, hello4
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,6 +26,7 @@ urlpatterns = [
     path('hello2/<str:s>/', hello2),
     path('hello3', hello3),
     path('hello3/', hello3),
+    path('hello4/', hello4),
 
     path('add/<int:num1>/<int:num2>/', add),
     path('add2', add2),
