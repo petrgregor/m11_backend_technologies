@@ -80,3 +80,10 @@ class CreatorsListView(ListView):
     template_name = "creators.html"
     model = Creator
     context_object_name = 'creators'
+
+
+# TODO: Creator detail view
+def creator(request, pk):
+    if Creator.objects.filter(id=pk).exists():
+        creator_ = Creator.objects.get(id=pk)
+        return render(request, "creator.html", {'creator': creator_})
