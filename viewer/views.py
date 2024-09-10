@@ -1,5 +1,6 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.urls import reverse_lazy, reverse
 from django.views import View
 from django.views.generic import TemplateView, ListView
 
@@ -82,8 +83,17 @@ class CreatorsListView(ListView):
     context_object_name = 'creators'
 
 
-# TODO: Creator detail view
 def creator(request, pk):
     if Creator.objects.filter(id=pk).exists():
         creator_ = Creator.objects.get(id=pk)
         return render(request, "creator.html", {'creator': creator_})
+    return redirect('creators')
+
+
+class GenreView(View):
+    def get(self, request, pk):
+        genre = Genre.objects.get(id=pk)
+        movies = Movie.objects.filter(genres__id=pk)
+        context = {'genre': genre, 'movies': movies}
+        return render(request, "movies_by_genre.html", context)
+
