@@ -49,6 +49,13 @@ class MoviesListView(ListView):
         context['movies'] = crime_movies
         return context"""
 
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context = super().get_context_data(**kwargs)
+        genres = Genre.objects.all()
+        context['genres'] = genres
+        context['movies'] = Movie.objects.all()
+        return context
+
 
 def movie(request, pk):
     if Movie.objects.filter(id=pk).exists():
@@ -92,8 +99,8 @@ def creator(request, pk):
 
 class GenreView(View):
     def get(self, request, pk):
+        genres = Genre.objects.all()
         genre = Genre.objects.get(id=pk)
         movies = Movie.objects.filter(genres__id=pk)
-        context = {'genre': genre, 'movies': movies}
-        return render(request, "movies_by_genre.html", context)
-
+        context = {'genres': genres, 'genre': genre, 'movies': movies}
+        return render(request, "movies.html", context)
