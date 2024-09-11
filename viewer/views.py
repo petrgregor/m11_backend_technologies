@@ -2,9 +2,15 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy, reverse
 from django.views import View
-from django.views.generic import TemplateView, ListView
+from django.views.generic import TemplateView, ListView, FormView
 
+from logging import getLogger
+
+from viewer.forms import CreatorForm
 from viewer.models import Movie, Creator, Genre, Country
+
+
+LOGGER = getLogger()
 
 
 def home(request):
@@ -96,6 +102,30 @@ def creator(request, pk):
         creator_ = Creator.objects.get(id=pk)
         return render(request, "creator.html", {'creator': creator_})
     return redirect('creators')
+
+
+class CreatorCreateView(FormView):
+    template_name = 'form.html'
+    form_class = CreatorForm
+    success_url = reverse_lazy('creators')
+
+    def form_valid(self, form):
+        result = super().form_valid(form)
+        cleaned_data = form.cleaned_data
+        Creator.objects.create(
+            name=cleaned_data['name'],
+            surname=cleaned_data['surname'],
+            date_of_birth=cleaned_data['date_of_birth'],
+            date_of_death=cleaned_data['date_of_death'],
+            country_of_birth=cleaned_data['country_of_birth'],
+            country_of_death=cleaned_data['country_of_death'],
+            biography=cleaned_data['biography']
+        )
+        return result
+
+    def form_invalid(self, form):
+        LOGGER.warning('User provided invalid data.')
+        return super().form_invalid(form)
 
 
 class GenreView(View):
