@@ -68,6 +68,7 @@ class CreatorModelForm(ModelForm):
         date_of_birth = cleaned_data['date_of_birth']
         if date_of_birth and date_of_birth >= date.today():
             raise ValidationError('Lze zadávat datum narození pouze v minulosti')
+        return date_of_birth
 
     def clean(self):
         cleaned_data = super().clean()
@@ -80,3 +81,6 @@ class CreatorModelForm(ModelForm):
         if len(name.strip()) == 0 and len(surname.strip()) == 0:
             raise ValidationError('Je potřeba zadat jméno nebo příjmení')
         # TODO: pokud jsou zadaná data narození a úmrtí, tak datum narození musí být < datum úmrtí
+        cleaned_data['name'] = name
+        cleaned_data['surname'] = surname
+        return cleaned_data
