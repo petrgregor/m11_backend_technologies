@@ -80,7 +80,8 @@ class CreatorDeleteView(DeleteView):
 
 
 class GenreView(View):
-    def get(self, request, pk):
+    @staticmethod
+    def get(request, pk):
         genres = Genre.objects.all()
         genre = Genre.objects.get(id=pk)
         movies = Movie.objects.filter(genres__id=pk)
@@ -91,7 +92,8 @@ class GenreView(View):
 
 
 class CountryView(View):
-    def get(self, request, pk):
+    @staticmethod
+    def get(request, pk):
         genres = Genre.objects.all()
         countries = Country.objects.all()
         country = Country.objects.get(id=pk)

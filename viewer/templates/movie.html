@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 
+{% block title %}
+{{ movie.title_orig }}
+{% endblock %}
+
 {% block content %}
-<h1>{{ movie.title_orig }}</h1>
+<h1>{{ movie.title_orig|upper|escape }}</h1>
 <div class="movie-title-cz">{{ movie.title_cz }} </div>
 <div class="movie-details">
     <div class="movie-genres">
@@ -49,7 +53,7 @@
     </div>
 
     <div class="movie-rating">
-        <strong>Hodnocení:</strong> {{ movie.rating }}
+        <strong>Hodnocení:</strong> {{ movie.rating|floatformat:"1" }}
     </div>
 
     <div class="movie-description">

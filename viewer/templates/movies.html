@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block title %}
+Filmy
+{% endblock %}
+
 {% block content %}
     Filtr dle žánru: <a href="{% url 'movies' %}">Všechny</a>,
     {% for genre in genres %}
