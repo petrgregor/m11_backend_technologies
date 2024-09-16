@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy, reverse
@@ -55,31 +55,39 @@ def creator(request, pk):
     return redirect('creators')
 
 
-class CreatorCreateView(LoginRequiredMixin, CreateView):
+class StaffRequiredMixin(UserPassesTestMixin):
+    def test_func(self):
+        return self.request.user.is_staff
+
+
+class CreatorCreateView(PermissionRequiredMixin, CreateView):
     template_name = 'form.html'
     form_class = CreatorModelForm
     success_url = reverse_lazy('creators')
+    permission_required = 'viewer.add_creator'
 
     def form_invalid(self, form):
         LOGGER.warning('User provided invalid data.')
         return super().form_invalid(form)
 
 
-class CreatorUpdateView(LoginRequiredMixin, UpdateView):
+class CreatorUpdateView(PermissionRequiredMixin, UpdateView):
     template_name = 'form.html'
     form_class = CreatorModelForm
     success_url = reverse_lazy('creators')
     model = Creator
+    permission_required = 'viewer.change_creator'
 
     def form_invalid(self, form):
         LOGGER.warning('User provided invalid data while updating a creator.')
         return super().form_invalid(form)
 
 
-class CreatorDeleteView(LoginRequiredMixin, DeleteView):
+class CreatorDeleteView(PermissionRequiredMixin, DeleteView):
     template_name = 'confirm_delete.html'
     model = Creator
     success_url = reverse_lazy('creators')
+    permission_required = 'viewer.delete_creator'
 
 
 class GenreView(View):
