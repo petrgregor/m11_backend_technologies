@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'django_dump_load_utf8',
 
+    'accounts',
     'viewer',
 ]
 
@@ -133,3 +134,6 @@ GRAPH_MODELS = {
     'app_labels': ['viewer'],
     #'graph_models': True
 }
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
