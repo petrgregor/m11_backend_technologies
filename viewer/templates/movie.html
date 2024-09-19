@@ -55,5 +55,12 @@
     <div class="movie-description">
         <strong>Popis:</strong> {{ movie.description }}
     </div>
+
+    {% if perms.viewer.change_movie %}
+        <a href="{% url 'movie_update' movie.id %}" class="btn btn-primary">Aktualizovat</a>
+    {% endif %}
+    {% if perms.viewer.delete_movie %}
+        <a href="{% url 'movie_delete' movie.id %}" class="btn btn-danger">Smazat</a>
+    {% endif %}
 </div>
 {% endblock %}

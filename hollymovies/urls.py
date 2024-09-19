@@ -21,7 +21,7 @@ from django.urls import path, include
 from accounts.views import SignUpView, user_logout
 from viewer.views import home, movie, MoviesListView, \
     CreatorsListView, creator, GenreView, CountryView, CreatorCreateView, CreatorUpdateView, \
-    CreatorDeleteView
+    CreatorDeleteView, MovieCreateView, MovieUpdateView, MovieDeleteView
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
@@ -29,6 +29,9 @@ urlpatterns = [
     path('', home, name='home'),
 
     path('movies/', MoviesListView.as_view(), name='movies'),
+    path('movie/create/', MovieCreateView.as_view(), name='movie_create'),
+    path('movie/update/<pk>/', MovieUpdateView.as_view(), name='movie_update'),
+    path('movie/delete/<pk>/', MovieDeleteView.as_view(), name='movie_delete'),
     path('movie/<pk>/', movie, name='movie'),
 
     path('creators/', CreatorsListView.as_view(), name='creators'),

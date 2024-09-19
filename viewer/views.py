@@ -8,7 +8,7 @@ from django.views.generic import TemplateView, ListView, FormView, CreateView, U
 
 from logging import getLogger
 
-from viewer.forms import CreatorModelForm
+from viewer.forms import CreatorModelForm, MovieModelForm
 from viewer.models import Movie, Creator, Genre, Country
 
 
@@ -31,6 +31,36 @@ class MoviesListView(ListView):
         context['countries'] = Country.objects.all()
         context['movies'] = Movie.objects.all()
         return context
+
+
+class MovieCreateView(PermissionRequiredMixin, CreateView):
+    template_name = 'form.html'
+    form_class = MovieModelForm
+    success_url = reverse_lazy('movies')
+    permission_required = 'viewer.add_movie'
+
+    def form_invalid(self, form):
+        LOGGER.warning('User provided invalid data.')
+        return super().form_invalid(form)
+
+
+class MovieUpdateView(PermissionRequiredMixin, UpdateView):
+    template_name = 'form.html'
+    form_class = MovieModelForm
+    success_url = reverse_lazy('movies')
+    model = Movie
+    permission_required = 'viewer.change_movie'
+
+    def form_invalid(self, form):
+        LOGGER.warning('User provided invalid data while updating a creator.')
+        return super().form_invalid(form)
+
+
+class MovieDeleteView(PermissionRequiredMixin, DeleteView):
+    template_name = 'confirm_delete.html'
+    model = Movie
+    success_url = reverse_lazy('movies')
+    permission_required = 'viewer.delete_movie'
 
 
 def movie(request, pk):
