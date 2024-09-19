@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Žánry</h1>
+        <ul>
+        {% for genre in genres %}
+            <li><a href="{% url 'genre' genre.id %}">{{ genre }}</a>
+                {% if perms.viewer.change_genre %}
+                    <a href="{% url 'genre_update' genre.id %}">✏️</a>
+                {% endif %}
+                {% if perms.viewer.delete_genre %}
+                    <a href="{% url 'genre_delete' genre.id %}">❌</a>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+{% endblock %}

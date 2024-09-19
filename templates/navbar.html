@@ -27,19 +27,38 @@
                         </a>
                         <div class="dropdown-menu">
                             {% if perms.viewer.add_creator %}
-                                <a class="dropdown-item text-right" href="{% url 'creator_create' %}">tvůrce</a>
+                                <a class="dropdown-item" href="{% url 'creator_create' %}">tvůrce</a>
                             {% endif %}
                             {% if perms.viewer.add_movie %}
-                                <a class="dropdown-item text-right" href="{% url 'movie_create' %}">film</a>
+                                <a class="dropdown-item" href="{% url 'movie_create' %}">film</a>
+                            {% endif %}
+                            {% if perms.viewer.add_genre %}
+                                <a class="dropdown-item" href="{% url 'genre_create' %}">žánr</a>
+                            {% endif %}
+                            {% if perms.viewer.add_country %}
+                                <a class="dropdown-item" href="{% url 'country_create' %}">zemi</a>
                             {% endif %}
                         </div>
-                    {% else %}
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="navbar-nav">
+                <div class="nav-item dropdown">
+                    {% if user.is_staff %}
                         <a class="nav-link active dropdown-toggle" href="#" data-toggle="dropdown">
-                            Nepřihlášený uživatel.
+                            ADMIN
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item text-right" href="{% url 'login' %}">Přihlásit</a>
-                            <a class="dropdown-item text-right" href="{% url 'signup' %}">Registrovat</a>
+                        <div class="dropdown-menu">
+                            {% if perms.viewer.view_genres %}
+                                <a class="dropdown-item" href="{% url 'genres' %}">seznam žánrů</a>
+                            {% endif %}
+                            {% if perms.viewer.view_countries %}
+                                <a class="dropdown-item" href="{% url 'countries' %}">seznam zemí</a>
+                            {% endif %}
+                            {% if perms.viewer.view_profiles %}
+                                <a class="dropdown-item" href="{% url 'profiles' %}">seznam profilů</a>
+                            {% endif %}
                         </div>
                     {% endif %}
                 </div>

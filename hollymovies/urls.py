@@ -21,7 +21,9 @@ from django.urls import path, include
 from accounts.views import SignUpView, user_logout
 from viewer.views import home, movie, MoviesListView, \
     CreatorsListView, creator, GenreView, CountryView, CreatorCreateView, CreatorUpdateView, \
-    CreatorDeleteView, MovieCreateView, MovieUpdateView, MovieDeleteView
+    CreatorDeleteView, MovieCreateView, MovieUpdateView, MovieDeleteView, GenreCreateView, GenreUpdateView, \
+    GenreDeleteView, CountryCreateView, CountryUpdateView, CountryDeleteView, GenresListView, CountriesListView, \
+    ProfilesListView
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
@@ -40,8 +42,19 @@ urlpatterns = [
     path('creator/delete/<pk>/', CreatorDeleteView.as_view(), name='creator_delete'),
     path('creator/<pk>/', creator, name='creator'),
 
+    path('gernes/', GenresListView.as_view(), name='genres'),
+    path('genre/create/', GenreCreateView.as_view(), name='genre_create'),
+    path('genre/update/<pk>/', GenreUpdateView.as_view(), name='genre_update'),
+    path('genre/delete/<pk>/', GenreDeleteView.as_view(), name='genre_delete'),
     path('genre/<pk>/', GenreView.as_view(), name='genre'),
+
+    path('countries/', CountriesListView.as_view(), name='countries'),
+    path('country/create/', CountryCreateView.as_view(), name='country_create'),
+    path('country/update/<pk>/', CountryUpdateView.as_view(), name='country_update'),
+    path('country/delete/<pk>/', CountryDeleteView.as_view(), name='country_delete'),
     path('country/<pk>/', CountryView.as_view(), name='country'),
+
+    path('profiles/', ProfilesListView.as_view(), name='profiles'),
 
     #path('accounts/login/', LoginView.as_view(), name='login'),
     path('accounts/signup/', SignUpView.as_view(), name='signup'),

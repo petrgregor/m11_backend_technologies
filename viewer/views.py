@@ -8,7 +8,8 @@ from django.views.generic import TemplateView, ListView, FormView, CreateView, U
 
 from logging import getLogger
 
-from viewer.forms import CreatorModelForm, MovieModelForm
+from accounts.models import Profile
+from viewer.forms import CreatorModelForm, MovieModelForm, GenreModelForm, CountryModelForm
 from viewer.models import Movie, Creator, Genre, Country
 
 
@@ -131,6 +132,42 @@ class GenreView(View):
         return render(request, "movies.html", context)
 
 
+class GenresListView(ListView):
+    template_name = "genres.html"
+    model = Genre
+    context_object_name = 'genres'
+
+
+class GenreCreateView(PermissionRequiredMixin, CreateView):
+    template_name = 'form.html'
+    form_class = GenreModelForm
+    success_url = reverse_lazy('home')
+    permission_required = 'viewer.add_genre'
+
+    def form_invalid(self, form):
+        LOGGER.warning('User provided invalid data.')
+        return super().form_invalid(form)
+
+
+class GenreUpdateView(PermissionRequiredMixin, UpdateView):
+    template_name = 'form.html'
+    form_class = GenreModelForm
+    success_url = reverse_lazy('home')
+    model = Genre
+    permission_required = 'viewer.change_genre'
+
+    def form_invalid(self, form):
+        LOGGER.warning('User provided invalid data while updating a creator.')
+        return super().form_invalid(form)
+
+
+class GenreDeleteView(PermissionRequiredMixin, DeleteView):
+    template_name = 'confirm_delete.html'
+    model = Genre
+    success_url = reverse_lazy('home')
+    permission_required = 'viewer.delete_genre'
+
+
 class CountryView(View):
     def get(self, request, pk):
         genres = Genre.objects.all()
@@ -140,3 +177,44 @@ class CountryView(View):
         context = {'genres': genres, 'countries': countries, 'movies': movies, 'country': country}
         return render(request, "movies.html", context)
 
+
+class CountriesListView(ListView):
+    template_name = "countries.html"
+    model = Country
+    context_object_name = 'countries'
+
+
+class CountryCreateView(PermissionRequiredMixin, CreateView):
+    template_name = 'form.html'
+    form_class = CountryModelForm
+    success_url = reverse_lazy('home')
+    permission_required = 'viewer.add_country'
+
+    def form_invalid(self, form):
+        LOGGER.warning('User provided invalid data.')
+        return super().form_invalid(form)
+
+
+class CountryUpdateView(PermissionRequiredMixin, UpdateView):
+    template_name = 'form.html'
+    form_class = CountryModelForm
+    success_url = reverse_lazy('home')
+    model = Country
+    permission_required = 'viewer.change_country'
+
+    def form_invalid(self, form):
+        LOGGER.warning('User provided invalid data while updating a creator.')
+        return super().form_invalid(form)
+
+
+class CountryDeleteView(PermissionRequiredMixin, DeleteView):
+    template_name = 'confirm_delete.html'
+    model = Country
+    success_url = reverse_lazy('home')
+    permission_required = 'viewer.delete_country'
+
+
+class ProfilesListView(ListView):
+    template_name = "profiles.html"
+    model = Profile
+    context_object_name = 'profiles'

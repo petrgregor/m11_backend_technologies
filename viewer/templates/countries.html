@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Země</h1>
+        <ul>
+        {% for country in countries %}
+            <li><a href="{% url 'country' country.id %}">{{ country }}</a>
+                {% if perms.viewer.change_country %}
+                    <a href="{% url 'country_update' country.id %}">✏️</a>
+                {% endif %}
+                {% if perms.viewer.delete_country %}
+                    <a href="{% url 'country_delete' country.id %}">❌</a>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+{% endblock %}
