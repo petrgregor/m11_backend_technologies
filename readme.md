@@ -190,6 +190,30 @@ movie.save()
 ### DELETE
 `Genre.objects.filter(name='Dokumentární').delete()`
 
+## Tests
+In every application we have a `tests.py` file where we can put tests.
+It is possible to create additional files with tests, the name should ideally start with `test*.py`.
+
+The command for testing is: `python manage.py test` will run all tests in files starting with `test`.
+
+The test command `python manage.py test viewer.test_models` will run all the tests in the file
+`test_models.py` in the `viewer` application.
+
+Basic tests are run on a virtual database that has the same schema as ours defined
+database in `models.py`, but it is empty and independent of the actual database.
+
+### GUI tests
+We will install selenium (for working with the website): `pip install selenium`
+
+The server must be running for operation.
+
+ATTENTION: Here we are already working with a real project, i.e. with a real database.
+
+### Tips for testing
+If the relation is ManyToMany then a list is specified: `'genres': ['1', '2']`.
+
+All inputs for the tested forms must be text.
+
 ## Tips for Final project
 - for team work:
   - one member of the team creates project
