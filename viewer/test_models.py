@@ -19,7 +19,10 @@ class MovieModelTest(TestCase):
         )
 
         country_cz = Country.objects.create(name="Czech", code="CZE")
-        #Country.objects.create(name="Czech")
+        """try:
+            Country.objects.create(name="Czech", code="CZE")
+        except:
+            print("UNIQUE constraint failed: viewer_country.code")"""
         country_sk = Country.objects.create(name="Slovak", code="SK")
         movie.countries.add(country_cz)
         movie.countries.add(country_cz)
@@ -56,7 +59,7 @@ class MovieModelTest(TestCase):
         movie.genres.add(genre_drama)
         genre_comedy = Genre.objects.create(name="Komedie")
         movie.genres.add(genre_comedy)
-        # Genre.objects.create(name="Drama")
+        #Genre.objects.create(name="Drama")
 
         movie.save()
 
@@ -91,5 +94,5 @@ class MovieModelTest(TestCase):
 
     def test_genre_unique(self):
         genre_count = Genre.objects.filter(name="Drama").count()
-        print(f"test_genre_unique: Czech={genre_count}")
+        print(f"test_genre_unique: Drama={genre_count}")
         self.assertEqual(genre_count, 1)

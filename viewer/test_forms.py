@@ -6,7 +6,7 @@ from viewer.forms import CreatorModelForm
 from viewer.models import Country
 
 
-class PeopleFormTest(TestCase):
+class CreatorFormTest(TestCase):
 
     @classmethod
     def setUpTestData(cls):
@@ -14,12 +14,12 @@ class PeopleFormTest(TestCase):
         Country.objects.create(name="Slovak", code="SK")
         Country.objects.create(name="Germany", code="GER")
 
-    def test_people_form_is_valid(self):
+    def test_creator_form_is_valid(self):
         form = CreatorModelForm(
             data={
                 'name': '    martin   ',
                 'surname': 'Novák',
-                'date_of_birth': '1965-09-17',  #datetime.date(1999, 2, 5).__str__(),
+                'date_of_birth': '1965-09-17',  #datetime.date(1965, 17, 9).__str__(),
                 'date_of_death': '2024-05-05',  #datetime.date(2024,5,5).__str__(),
                 'country_of_birth': '1',
                 'country_of_death': '',
@@ -29,12 +29,12 @@ class PeopleFormTest(TestCase):
         print(f"\ntest_people_form_is_valid: {form.data}")
         self.assertTrue(form.is_valid())
 
-    def test_people_date_form_is_invalid(self):
+    def test_creator_date_form_is_invalid(self):
         form = CreatorModelForm(
             data={
                 'name': '   martin   ',
                 'surname': 'Novák',
-                'date_of_birth': '2025-09-17',
+                'date_of_birth': '2025-09-17',  # date of birth in future -> not valid
                 'date_of_death': '1924-05-05',
                 'country_of_birth': '2',
                 'country_of_death': '',

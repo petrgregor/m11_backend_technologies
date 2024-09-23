@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 def test_home_page_firefox():
     selenium_webdriver = webdriver.Firefox()
     selenium_webdriver.get('http://127.0.0.1:8000/')
+    time.sleep(2)
     assert 'Vítejte v naší HollyMovie databázi.' in selenium_webdriver.page_source
 
 
