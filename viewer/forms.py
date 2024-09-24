@@ -3,7 +3,7 @@ from datetime import date
 from django.core.exceptions import ValidationError
 from django.forms import Form, CharField, DateField, ModelChoiceField, Textarea, ModelForm, NumberInput
 
-from viewer.models import Country, Creator, Movie, Genre, Image
+from viewer.models import Country, Creator, Movie, Genre, Image, Review
 
 
 class GenreModelForm(ModelForm):
@@ -74,3 +74,9 @@ class ImageModelForm(ModelForm):
     class Meta:
         model = Image
         fields = '__all__'
+
+
+class ReviewModelForm(ModelForm):
+    class Meta:
+        model = Review
+        fields = ['rating', 'text']

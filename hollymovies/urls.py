@@ -21,11 +21,12 @@ from django.urls import path, include
 
 from accounts.views import SignUpView, user_logout
 from hollymovies import settings
-from viewer.views import home, movie, MoviesListView, \
+from viewer.views import home, MoviesListView, \
     CreatorsListView, creator, GenreView, CountryView, CreatorCreateView, CreatorUpdateView, \
     CreatorDeleteView, MovieCreateView, MovieUpdateView, MovieDeleteView, GenreCreateView, GenreUpdateView, \
     GenreDeleteView, CountryCreateView, CountryUpdateView, CountryDeleteView, GenresListView, CountriesListView, \
-    ProfilesListView, ImageCreateView, ImageDetailView, ImagesListView, ImageUpdateView, ImageDeleteView
+    ProfilesListView, ImageCreateView, ImageDetailView, ImagesListView, ImageUpdateView, ImageDeleteView, \
+    MovieTemplateView, ReviewDeleteView
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
@@ -36,7 +37,7 @@ urlpatterns = [
     path('movie/create/', MovieCreateView.as_view(), name='movie_create'),
     path('movie/update/<pk>/', MovieUpdateView.as_view(), name='movie_update'),
     path('movie/delete/<pk>/', MovieDeleteView.as_view(), name='movie_delete'),
-    path('movie/<pk>/', movie, name='movie'),
+    path('movie/<pk>/', MovieTemplateView.as_view(), name='movie'),
 
     path('creators/', CreatorsListView.as_view(), name='creators'),
     path('creator/create/', CreatorCreateView.as_view(), name='creator_create'),
@@ -61,6 +62,8 @@ urlpatterns = [
     path('image/update/<pk>/', ImageUpdateView.as_view(), name='image_update'),
     path('image/delete/<pk>/', ImageDeleteView.as_view(), name='image_delete'),
     path('image/<pk>/', ImageDetailView.as_view(), name='image'),
+
+    path('review/delete/<pk>/', ReviewDeleteView.as_view(), name='review_delete'),
 
     path('profiles/', ProfilesListView.as_view(), name='profiles'),
 

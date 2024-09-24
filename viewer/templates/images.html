@@ -4,9 +4,9 @@
     <h1>Obrázky</h1>
         <ul>
         {% for image in images %}
-            <li style="display: flex; align-items: flex-start; background-color: lightgray; border-radius: 15px; margin-bottom: 10px;">
-                <a href="{% url 'image' image.id %}" style="padding-top: 10px; padding-left: 5px;">
-                    <img src="{{ image.image.url }}" alt="{{ image.description }}" width="40px" style="margin-right: 10px">
+            <li class="bg-light rounded mt-2 pl-2 pt-2" style="display: flex; align-items: flex-start;">
+                <a href="{% url 'image' image.id %}" class="pt-2 pl-2">
+                    <img src="{{ image.image.url }}" alt="{{ image.description }}" width="40px" class="mr-2">
                 </a>
                 {% if perms.viewer.change_image %}
                     <a href="{% url 'image_update' image.id %}">✏️</a>
@@ -14,8 +14,7 @@
                 {% if perms.viewer.delete_image %}
                     <a href="{% url 'image_delete' image.id %}">❌</a>
                 {% endif %}
-
-                <div class="image-details" style="display: flex; flex-direction: column; padding-left: 10px">
+                <div class="image-details pl-2" style="display: flex; flex-direction: column;">
                     {% if image.movie %}
                         <div class="image-movie mb-2">
                             Film: <a href="{% url 'movie' image.movie.id %}">{{ image.movie.title_orig }}</a>

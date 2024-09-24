@@ -2,6 +2,8 @@ from datetime import date
 
 from django.db.models import *  # Model, CharField, DateField, ForeignKey, SET_NULL, TextField, ManyToManyField, IntegerField
 
+from accounts.models import Profile
+
 
 class Genre(Model):
     name = CharField(max_length=20, null=False, blank=False, unique=True)
@@ -103,3 +105,22 @@ class Image(Model):
 
     def __str__(self):
         return f"Image: {self.image}, {self.description}"
+
+
+class Review(Model):
+    movie = ForeignKey(Movie, on_delete=CASCADE, null=False, blank=False, related_name='reviews')
+    user = ForeignKey(Profile, on_delete=SET_NULL, null=True, blank=False, related_name='reviews')
+    rating = IntegerField(null=True, blank=True)
+    text = TextField(null=True, blank=True)
+    created = DateTimeField(auto_now_add=True)
+    updated = DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ['updated']
+
+    def __repr__(self):
+        return (f"Review(movie={self.movie}, user={self.user}, "
+                f"rating={self.rating}, text={self.text})")
+
+    def __str__(self):
+        return f"User: {self.user}, movie:{self.movie}, rating={self.rating}, text={self.text[:50]}"

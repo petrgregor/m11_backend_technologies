@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
+from django.db.models import Avg
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy, reverse
@@ -9,8 +10,9 @@ from django.views.generic import TemplateView, ListView, FormView, CreateView, U
 from logging import getLogger
 
 from accounts.models import Profile
-from viewer.forms import CreatorModelForm, MovieModelForm, GenreModelForm, CountryModelForm, ImageModelForm
-from viewer.models import Movie, Creator, Genre, Country, Image
+from viewer.forms import CreatorModelForm, MovieModelForm, GenreModelForm, CountryModelForm, ImageModelForm, \
+    ReviewModelForm
+from viewer.models import Movie, Creator, Genre, Country, Image, Review
 
 LOGGER = getLogger()
 
@@ -63,12 +65,44 @@ class MovieDeleteView(PermissionRequiredMixin, DeleteView):
     permission_required = 'viewer.delete_movie'
 
 
-def movie(request, pk):
+"""def movie(request, pk):
     if Movie.objects.filter(id=pk).exists():
         movie_ = Movie.objects.get(id=pk)
         context = {'movie': movie_}
         return render(request, "movie.html", context)
-    return redirect('movies')
+    return redirect('movies')"""
+
+
+class MovieTemplateView(TemplateView):
+    template_name = "movie.html"
+
+    def post(self, request, *args, **kwargs):
+        context = self.get_context_data()
+        review_ = Review.objects.filter(movie=context["movie"], user=Profile.objects.get(user=request.user))
+        if review_.exists():
+            review_ = Review.objects.get(movie=context["movie"], user=Profile.objects.get(user=request.user))
+            review_.rating = request.POST.get("rating")
+            review_.text = request.POST.get("text")
+            review_.save()
+        else:
+            Review.objects.create(movie=context["movie"],
+                                  user=Profile.objects.get(user=request.user),
+                                  rating=request.POST.get("rating"),
+                                  text=request.POST.get("text")
+                                  )
+        # Recalculate the rating for the given movie
+        movie_ = context["movie"]
+        movie_.rating = movie_.reviews.aggregate(Avg('rating'))['rating__avg']  #Review.objects.filter(movie=movie_).aggregate(Avg('rating'))['rating__avg']
+        movie_.save()
+        return render(request, "movie.html", context)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        pk = self.kwargs['pk']
+        movie_ = Movie.objects.get(id=pk)
+        context["movie"] = movie_
+        context["form_review"] = ReviewModelForm
+        return context
 
 
 class CreatorsListView(ListView):
@@ -258,3 +292,30 @@ class ImagesListView(ListView):
     template_name = "images.html"
     model = Image
     context_object_name = 'images'
+
+
+class ReviewDeleteView(DeleteView):
+    template_name = 'confirm_delete.html'
+    model = Review
+    success_url = reverse_lazy('movies')
+
+    def form_valid(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        movie_ = self.object.movie
+
+        response = super().delete(request, *args, **kwargs)
+
+        average_rating = movie_.reviews.aggregate(Avg('rating'))['rating__avg']
+
+        movie_.rating = average_rating
+        movie_.save()
+        print(movie_)
+
+        return response
+
+
+    """def get_success_url(self):
+        referer = self.request.META.get('HTTP_REFERER')
+        if referer:
+            return referer
+        return super().get_success_url()"""
