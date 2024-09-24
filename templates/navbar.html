@@ -60,6 +60,9 @@
                             {% if perms.viewer.view_countries %}
                                 <a class="dropdown-item" href="{% url 'countries' %}">seznam zemí</a>
                             {% endif %}
+                            {% if perms.viewer.view_images %}
+                                <a class="dropdown-item" href="{% url 'images' %}">seznam obrázků</a>
+                            {% endif %}
                             {% if perms.viewer.view_profiles %}
                                 <a class="dropdown-item" href="{% url 'profiles' %}">seznam profilů</a>
                             {% endif %}

@@ -230,6 +230,31 @@ class ImageCreateView(PermissionRequiredMixin, CreateView):
         return super().form_invalid(form)
 
 
+class ImageUpdateView(PermissionRequiredMixin, UpdateView):
+    template_name = 'form_image.html'
+    form_class = ImageModelForm
+    success_url = reverse_lazy('images')
+    model = Image
+    permission_required = 'viewer.change_image'
+
+    def form_invalid(self, form):
+        LOGGER.warning('User provided invalid data while updating a creator.')
+        return super().form_invalid(form)
+
+
+class ImageDeleteView(PermissionRequiredMixin, DeleteView):
+    template_name = 'confirm_delete.html'
+    model = Image
+    success_url = reverse_lazy('images')
+    permission_required = 'viewer.delete_image'
+
+
 class ImageDetailView(DetailView):
     model = Image
     template_name = 'image.html'
+
+
+class ImagesListView(ListView):
+    template_name = "images.html"
+    model = Image
+    context_object_name = 'images'
