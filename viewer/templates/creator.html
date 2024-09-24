@@ -2,6 +2,15 @@
 
 {% block content %}
 <h1>{{ creator.name }} {{ creator.surname }}</h1>
+<div class="creator-images">
+    {% for image in creator.images.all %}
+        <span class="creator-image">
+            <a href="{% url 'image' image.id %}">
+                <img src="{{ image.image.url }}" alt="{{ image.description }}" width="150px">
+            </a>
+        </span>
+    {% endfor %}
+</div>
 <div class="creator-details">
     <div class="creator-birthdate">
         <strong>Narození:</strong>

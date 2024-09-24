@@ -4,14 +4,13 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy, reverse
 from django.views import View
-from django.views.generic import TemplateView, ListView, FormView, CreateView, UpdateView, DeleteView
+from django.views.generic import TemplateView, ListView, FormView, CreateView, UpdateView, DeleteView, DetailView
 
 from logging import getLogger
 
 from accounts.models import Profile
-from viewer.forms import CreatorModelForm, MovieModelForm, GenreModelForm, CountryModelForm
-from viewer.models import Movie, Creator, Genre, Country
-
+from viewer.forms import CreatorModelForm, MovieModelForm, GenreModelForm, CountryModelForm, ImageModelForm
+from viewer.models import Movie, Creator, Genre, Country, Image
 
 LOGGER = getLogger()
 
@@ -218,3 +217,19 @@ class ProfilesListView(ListView):
     template_name = "profiles.html"
     model = Profile
     context_object_name = 'profiles'
+
+
+class ImageCreateView(PermissionRequiredMixin, CreateView):
+    template_name = 'form_image.html'
+    form_class = ImageModelForm
+    success_url = reverse_lazy('home')
+    permission_required = 'viewer.add_image'
+
+    def form_invalid(self, form):
+        LOGGER.warning('User provided invalid data.')
+        return super().form_invalid(form)
+
+
+class ImageDetailView(DetailView):
+    model = Image
+    template_name = 'image.html'

@@ -11,3 +11,4 @@ db.sqlite3
 /.idea/.gitignore
 /.idea/dataSources.xml
 /tmp.txt
+/images/

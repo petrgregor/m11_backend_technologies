@@ -214,6 +214,27 @@ If the relation is ManyToMany then a list is specified: `'genres': ['1', '2']`.
 
 All inputs for the tested forms must be text.
 
+## Images
+We will install the Pillow package: `python -m pip install Pillow`
+
+In `models.py` we use `ImageField`: `image = ImageField(upload_to='images/', default=None, null=False, blank=False)`
+
+Make migrations.
+
+In `settings.py` we add paths:
+```python
+MEDIA_ROOT = BASE_DIR  #os.path.join(BASE_DIR, '')
+MEDIA_URL = 'images/'
+```
+
+In `urls.py` we add to the end of the path list:
+`+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)`
+
+We display the image in the template using `<img src="{{ image.image.url }}">`
+
+For the file upload form we need to define:
+`<form method="POST" enctype="multipart/form-data">`
+
 ## Tips for Final project
 - for team work:
   - one member of the team creates project

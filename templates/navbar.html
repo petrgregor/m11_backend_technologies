@@ -32,6 +32,9 @@
                             {% if perms.viewer.add_movie %}
                                 <a class="dropdown-item" href="{% url 'movie_create' %}">film</a>
                             {% endif %}
+                            {% if perms.viewer.add_image %}
+                                <a class="dropdown-item" href="{% url 'image_create' %}">obrázek</a>
+                            {% endif %}
                             {% if perms.viewer.add_genre %}
                                 <a class="dropdown-item" href="{% url 'genre_create' %}">žánr</a>
                             {% endif %}
@@ -50,6 +53,7 @@
                             ADMIN
                         </a>
                         <div class="dropdown-menu">
+                            <a class="dropdown-item" href="{% url 'admin:index' %}">admin</a>
                             {% if perms.viewer.view_genres %}
                                 <a class="dropdown-item" href="{% url 'genres' %}">seznam žánrů</a>
                             {% endif %}

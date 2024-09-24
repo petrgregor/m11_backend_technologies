@@ -3,7 +3,7 @@ from datetime import date
 from django.core.exceptions import ValidationError
 from django.forms import Form, CharField, DateField, ModelChoiceField, Textarea, ModelForm, NumberInput
 
-from viewer.models import Country, Creator, Movie, Genre
+from viewer.models import Country, Creator, Movie, Genre, Image
 
 
 class GenreModelForm(ModelForm):
@@ -68,3 +68,9 @@ class CreatorModelForm(ModelForm):
         cleaned_data['name'] = name
         cleaned_data['surname'] = surname
         return cleaned_data
+
+
+class ImageModelForm(ModelForm):
+    class Meta:
+        model = Image
+        fields = '__all__'

@@ -14,16 +14,18 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.urls.static import static
 from django.contrib import admin
 #from django.contrib.auth.views import LoginView
 from django.urls import path, include
 
 from accounts.views import SignUpView, user_logout
+from hollymovies import settings
 from viewer.views import home, movie, MoviesListView, \
     CreatorsListView, creator, GenreView, CountryView, CreatorCreateView, CreatorUpdateView, \
     CreatorDeleteView, MovieCreateView, MovieUpdateView, MovieDeleteView, GenreCreateView, GenreUpdateView, \
     GenreDeleteView, CountryCreateView, CountryUpdateView, CountryDeleteView, GenresListView, CountriesListView, \
-    ProfilesListView
+    ProfilesListView, ImageCreateView, ImageDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
@@ -54,10 +56,13 @@ urlpatterns = [
     path('country/delete/<pk>/', CountryDeleteView.as_view(), name='country_delete'),
     path('country/<pk>/', CountryView.as_view(), name='country'),
 
+    path('image/create/', ImageCreateView.as_view(), name='image_create'),
+    path('image/<pk>/', ImageDetailView.as_view(), name='image'),
+
     path('profiles/', ProfilesListView.as_view(), name='profiles'),
 
     #path('accounts/login/', LoginView.as_view(), name='login'),
     path('accounts/signup/', SignUpView.as_view(), name='signup'),
     path('accounts/logout/', user_logout, name='logout'),
     path('accounts/', include('django.contrib.auth.urls')),  # defaultní paths a veiws z Djanga
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

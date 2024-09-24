@@ -90,3 +90,16 @@ class Movie(Model):
         if minutes < 10:
             minutes = f"0{minutes}"
         return f"{hours}:{minutes}"
+
+
+class Image(Model):
+    image = ImageField(upload_to='images/', default=None, null=False, blank=False)
+    movie = ForeignKey(Movie, on_delete=SET_NULL, null=True, blank=True, related_name='images')
+    actors = ManyToManyField(Creator, blank=True, related_name='images')
+    description = TextField(null=True, blank=True)
+
+    def __repr__(self):
+        return f"Image(image={self.image}, movie={self.movie}, actors={self.actors}, description={self.description})"
+
+    def __str__(self):
+        return f"Image: {self.image}, {self.description}"
