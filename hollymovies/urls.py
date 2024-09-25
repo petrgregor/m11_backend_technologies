@@ -19,6 +19,7 @@ from django.contrib import admin
 #from django.contrib.auth.views import LoginView
 from django.urls import path, include
 
+from api.views import *
 from accounts.views import SignUpView, user_logout
 from hollymovies import settings
 from viewer.views import home, MoviesListView, \
@@ -71,4 +72,10 @@ urlpatterns = [
     path('accounts/signup/', SignUpView.as_view(), name='signup'),
     path('accounts/logout/', user_logout, name='logout'),
     path('accounts/', include('django.contrib.auth.urls')),  # defaultní paths a veiws z Djanga
+
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path('api/movies/', Movies.as_view(), name='api_movies'),
+    path('api/movie/<pk>/', MovieDetail.as_view(), name='api_movie'),
+    path('api/creators/', Creators.as_view(), name='api_creators'),
+    path('api/creator/<pk>/', CreatorDetail.as_view(), name='api_creator'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

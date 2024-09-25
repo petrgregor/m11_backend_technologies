@@ -70,6 +70,20 @@
                     {% endif %}
                 </div>
             </div>
+
+            <div class="navbar-nav">
+                <div class="nav-item dropdown">
+                    {% if user.is_staff %}
+                        <a class="nav-link active dropdown-toggle" href="#" data-toggle="dropdown">
+                            API
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="{% url 'api_movies' %}">filmy</a>
+                            <a class="dropdown-item" href="{% url 'api_creators' %}">tvůrci</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
         </div>
 
         <div class="navbar-nav ml-auto">

@@ -235,6 +235,48 @@ We display the image in the template using `<img src="{{ image.image.url }}">`
 For the file upload form we need to define:
 `<form method="POST" enctype="multipart/form-data">`
 
+## API
+We will create a new application for the API: `python manage.py startapp api`
+
+In `setting.py` we put `api` in `INSTALLED_APPS`.
+
+We will install the rest framework: `pip install djangorestframework`.
+
+In the `setting.py` file we put `rest_framework` in `INSTALLED_APPS`.
+
+Since the api returns a file, we don't need to deal with templates.
+
+We create a serializer in the `api.serializers.py` file:
+```python
+class MovieListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Movie
+        fields = '__all__'
+```
+
+We create a view in `api.views.py`:
+```python
+class Movies(mixins.ListModelMixin, generics.GenericAPIView):
+    queryset = Movie.objects.all()
+    serializer_class = MovieListSerializer
+
+    def get(self, request, *args, **kwargs):
+        return self.list(request, *args, **kwargs)
+```
+
+We put a new path in `urls.py`:
+`path('api/movies/', api.views.Movies.as_view()),`
+
+It is advisable to limit work with the API only to users who have authorization.
+In `settings.py` we insert:
+```python
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly',
+    ]
+}
+```
+
 ## Tips for Final project
 - for team work:
   - one member of the team creates project
