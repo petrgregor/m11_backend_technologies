@@ -305,11 +305,13 @@ class ReviewDeleteView(DeleteView):
 
         response = super().delete(request, *args, **kwargs)
 
+        #print(f"aggregate1: {movie_.reviews.aggregate(Avg('rating'))}")
+        #print(f"aggregate2: {movie_.reviews.aggregate(Avg('rating'))['rating__avg']}")
         average_rating = movie_.reviews.aggregate(Avg('rating'))['rating__avg']
 
         movie_.rating = average_rating
         movie_.save()
-        print(movie_)
+        #print(movie_)
 
         return response
 

@@ -116,7 +116,7 @@ class Review(Model):
     updated = DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['updated']
+        ordering = ['-updated']
 
     def __repr__(self):
         return (f"Review(movie={self.movie}, user={self.user}, "
