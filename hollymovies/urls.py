@@ -27,7 +27,7 @@ from viewer.views import home, MoviesListView, \
     CreatorDeleteView, MovieCreateView, MovieUpdateView, MovieDeleteView, GenreCreateView, GenreUpdateView, \
     GenreDeleteView, CountryCreateView, CountryUpdateView, CountryDeleteView, GenresListView, CountriesListView, \
     ProfilesListView, ImageCreateView, ImageDetailView, ImagesListView, ImageUpdateView, ImageDeleteView, \
-    MovieTemplateView, ReviewDeleteView
+    MovieTemplateView, ReviewDeleteView, search
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
@@ -65,6 +65,8 @@ urlpatterns = [
     path('image/<pk>/', ImageDetailView.as_view(), name='image'),
 
     path('review/delete/<pk>/', ReviewDeleteView.as_view(), name='review_delete'),
+
+    path('search/', search, name='search'),
 
     path('profiles/', ProfilesListView.as_view(), name='profiles'),
 

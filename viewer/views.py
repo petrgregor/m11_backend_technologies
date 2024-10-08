@@ -321,3 +321,23 @@ class ReviewDeleteView(DeleteView):
         if referer:
             return referer
         return super().get_success_url()"""
+
+
+def search(request):
+    if request.method == 'POST':  # pokud jsme poslali dotaz z formuláře
+        search_string = request.POST.get('search')
+        search_string = search_string.strip()
+        if len(search_string) > 0:
+            movies_title_orig = Movie.objects.filter(title_orig__contains=search_string)
+            movies_title_cz = Movie.objects.filter(title_cz__contains=search_string)
+            movies_descr = Movie.objects.filter(description__contains=search_string)
+            creator_names = Creator.objects.filter(name__contains=search_string)
+            creator_surnames = Creator.objects.filter(surname__contains=search_string)
+
+            context = {'search': search_string,
+                       'movies_title_orig': movies_title_orig,
+                       'movies_title_cz': movies_title_cz,
+                       'movies_descr': movies_descr,
+                       'creator_names': creator_names, 'creator_surnames': creator_surnames}
+            return render(request, 'search.html', context)
+    return render(request, 'home.html')

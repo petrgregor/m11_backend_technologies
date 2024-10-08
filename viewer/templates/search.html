@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Výsledky vyhledávání výrazu: '{{ search }}'{% endblock %}
+
+{% block content %}
+<h1>Výsledky vyhledávání výrazu: '{{ search }}'</h1>
+    {% if movies_title_orig %}
+        <h2>Výsledky pro originální název</h2>
+        <ul>
+          {% for movie in movies_title_orig %}
+            <li><a href="{% url 'movie' movie.id %}">{{ movie.title_orig }}</a></li>
+          {% endfor %}
+        </ul>
+    {% endif %}
+    {% if movies_title_cz %}
+        <h2>Výsledky pro český název</h2>
+        <ul>
+          {% for movie in movies_title_cz %}
+            <li><a href="{% url 'movie' movie.id %}">{{ movie.title_cz }}</a></li>
+          {% endfor %}
+        </ul>
+    {% endif %}
+    {% if movies_descr %}
+        <h2>Výsledky pro popis filmu</h2>
+        <ul>
+          {% for movie in movies_descr %}
+            <li><a href="{% url 'movie' movie.id %}">{{ movie.title_orig }}</a></li>
+          {% endfor %}
+        </ul>
+    {% endif %}
+    {% if creator_names %}
+        <h2>Výsledky pro jméno tvůrce</h2>
+        <ul>
+          {% for creator in creator_names %}
+            <li><a href="{% url 'creator' creator.id %}">{{ creator.name }} {{ creator.surname }}</a></li>
+          {% endfor %}
+        </ul>
+    {% endif %}
+    {% if creator_surnames %}
+        <h2>Výsledky pro příjmení tvůrce</h2>
+        <ul>
+          {% for creator in creator_surnames %}
+            <li><a href="{% url 'creator' creator.id %}">{{ creator.name }} {{ creator.surname }}</a></li>
+          {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
