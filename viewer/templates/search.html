@@ -44,4 +44,13 @@
           {% endfor %}
         </ul>
     {% endif %}
+    {% if g_json %}
+        <h2>Výsledky pro vyhledávání na <a href="https://www.csfd.cz/">čsfd.cz</a></h2>
+        <ul>
+          {% for g_result in g_json.items %}
+              <li><a href="{{ g_result.link }}">{{ g_result.title }}</a> <br>
+                  {{ g_result.snippet }}</li>
+          {% endfor %}
+        </ul>
+    {% endif %}
 {% endblock %}

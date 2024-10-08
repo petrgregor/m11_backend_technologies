@@ -1,3 +1,4 @@
+import requests
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
 from django.db.models import Avg
@@ -10,6 +11,7 @@ from django.views.generic import TemplateView, ListView, FormView, CreateView, U
 from logging import getLogger
 
 from accounts.models import Profile
+from hollymovies.secret_key import GOOGLE_API_KEY, GOOGLE_CX
 from viewer.forms import CreatorModelForm, MovieModelForm, GenreModelForm, CountryModelForm, ImageModelForm, \
     ReviewModelForm
 from viewer.models import Movie, Creator, Genre, Country, Image, Review
@@ -334,10 +336,25 @@ def search(request):
             creator_names = Creator.objects.filter(name__contains=search_string)
             creator_surnames = Creator.objects.filter(surname__contains=search_string)
 
+            # Google API
+            url = f"https://www.googleapis.com/customsearch/v1?key={GOOGLE_API_KEY}&cx={GOOGLE_CX}&q={search_string}"
+            g_request = requests.get(url)
+            g_json = g_request.json()
+            """
+            print(g_json)
+            for g_result in g_json["items"]:
+                print(g_result["title"])
+                print(f"\t{g_result["link"]}")
+                print(f"\t{g_result["displayLink"]}")
+                print(f"\t{g_result["snippet"]}")
+                """
+
             context = {'search': search_string,
                        'movies_title_orig': movies_title_orig,
                        'movies_title_cz': movies_title_cz,
                        'movies_descr': movies_descr,
-                       'creator_names': creator_names, 'creator_surnames': creator_surnames}
+                       'creator_names': creator_names,
+                       'creator_surnames': creator_surnames,
+                       'g_json': g_json}
             return render(request, 'search.html', context)
     return render(request, 'home.html')
