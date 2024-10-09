@@ -277,6 +277,19 @@ REST_FRAMEWORK = {
 }
 ```
 
+## Google search API
+The application can search using the Google API on the [csfd.cz](https://www.csfd.cz/) page.
+To work with the Google API, you need your own `API key` and `cx`, 
+which you need to add to the constants in the `hollymovies/secret_key.py` file:
+```python
+GOOGLE_API_KEY = 'your_api_key'
+GOOGLE_CX = 'your_cx'
+```
+this information is not shared on git, so you need to add your own Google access keys. 
+You can find out how on this page: [Identify your application to Google with API key](https://developers.google.com/custom-search/v1/introduction#identify_your_application_to_google_with_api_key)
+
+![ER diagram](./files/google_search.png)
+
 ## Tips for Final project
 - for team work:
   - one member of the team creates project
